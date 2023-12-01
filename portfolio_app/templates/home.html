@@ -1,0 +1,39 @@
+{% extends "common.html" %}
+{% block title %}Home{% endblock %}
+{% block body %}
+            <div class="profile">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="profile_picture">
+                            <img src="/media/portfolio/Images/Ayush.jpg" class="mb-3" alt="Image Not Found" />
+                            <button type="submit" style="width:100%;border-radius:20px">
+                                <a class="nav-link text-center fs-5"
+                                   href="/media/portfolio/Resume/Ayush_Namdhar_M.pdf" download="">Resume</a></button>
+                        </div>
+                    </div>
+                    <div class="col-9 text-white">
+                        <div class="custom_profile">
+                            <div class="profile_text">
+                                <h4>I'm <span class="ayush_text">Ayush Namdhar</span></h4>
+                                <h4>a self-taught <span class="first_text text-primary">Full Stack Developer</span></h4>
+                                <h4>with <span style="font-size:25px;font-weight: 650;">fast learning</span> trait</h4>
+                            </div>
+                            <div class="social_icon">
+                                <a href="https://www.linkedin.com/in/ayush-namdhar-8ba009216/" target="_blank"><i
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Linkedin"
+                                        class="fa-brands fa-linkedin"></i></a>
+
+                                <a href="https://github.com/namdharayush" target="_blank"><i class="fa-brands fa-github"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Github"></i></a>
+
+                                <a href="mailto:ayushnamdhar27@gmail.com" target="_blank"><i
+                                        class="fa-solid fa-envelope" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        title="Email"></i></a>
+                                <a href="https://leetcode.com/AyushNamdhar/" target="_blank"><i data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="LeetCode" class="fa-solid fa-l"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+{% endblock %}
