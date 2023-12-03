@@ -1,17 +1,155 @@
 {% extends "common.html" %}
 {% block title %}Home{% endblock %}
+{% block css %}
+  <style>
+    @media screen and (min-width:992px){
+        .profile_text, .first_text{
+            min-width: 375px;
+        }
+        .social_icon{
+            margin-top:30px !important;
+        }
+        .social_icon a{
+            margin-right: 15px;
+        }
+        .profile button a{
+            max-width:100%;
+            text-align: center;
+            font-size: 18px;
+        }
+    }
+    @media (min-width:768px) and (max-width : 991.98px){
+        .profile img{
+            width: 120% !important;
+        }
+        .profile_text h4{
+            font-size: 20px;
+        }
+        .ayush_text{
+            font-size: 22px !important;
+        }
+        .profile_text, .first_text{
+            min-width: 375px;
+        }
+        .social_icon{
+            margin-top:20px !important;
+        }
+        .social_icon a{
+            margin-right: 15px;
+        }
+        .social_icon i{
+            font-size: 30px !important;
+        }
+        .profile button{
+            width: 100%;
+            background-color: transparent;
+            border: 0px;
+        }
+        .profile button a{
+            text-align: center !important;
+            font-size: 16px;
+            margin-left: -13px;
+        }
+    }
+    @media (min-width:576px) and (max-width : 767.98px){
+        .profile_text h4{
+            font-size: 20px;
+        }
+        .profile_picture{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .profile img{
+            width: 60% !important;
+        }
+        .ayush_text{
+            font-size: 22px !important;
+        }
+        .profile_text, .first_text{
+            min-width: 375px;
+        }
+        .social_icon{
+            margin-top:20px !important;
+        }
+        .social_icon a{
+            margin-right: 15px;
+        }
+        .social_icon i{
+            font-size: 30px !important;
+        }
+        .profile button{
+            width: 70%;
+        }
+        .profile button a{
+            text-align: center !important;
+            font-size: 16px;
+            margin-left: -10px;
+        }
+        .custom-row{
+                display: inline;
+        }
+    }
+    @media screen and (max-width : 575.98px){
+        body{
+            background-color: black;
+            overflow-x: hidden !important;
+        }
+        .profile_text h4{
+            font-size: 18px;
+        }
+        .profile_picture{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        .profile img{
+            width: 55% !important;
+        }
+        .ayush_text{
+            font-size: 20px !important;
+        }
+        .profile_text, .first_text{
+            min-width: 375px;
+        }
+        .social_icon{
+            margin-top:18px !important;
+        }
+        .social_icon a{
+            margin-right: 13px;
+        }
+        .social_icon i{
+            font-size: 24px !important;
+        }
+        .profile button{
+            width: 60%;
+            margin-bottom: 30px;
+        }
+        .profile button a{
+            text-align: center !important;
+            font-size: 16px;
+            margin-left: -10px;
+        }
+        .custom-row{
+            margin-left: -50px !important;
+            margin-top: -60px !important;
+        }
+    }
+  </style>
+{% endblock  %}
 {% block body %}
             <div class="profile">
-                <div class="row">
-                    <div class="col-3">
+                <div class="row custom-row">
+                    <div class="col-12 col-md-3">
                         <div class="profile_picture">
                             <img src="/media/portfolio/Images/Ayush.jpg" class="mb-3" alt="Image Not Found" />
-                            <button type="submit" style="width:100%;border-radius:20px">
-                                <a class="nav-link text-center fs-5"
+                            <button type="submit" style="border-radius:20px">
+                                <a class="nav-link"
                                    href="/media/portfolio/Resume/Ayush_Namdhar_M.pdf" download="">Resume</a></button>
                         </div>
                     </div>
-                    <div class="col-9 text-white">
+                    <div class="col-12 col-md-9 text-white">
                         <div class="custom_profile">
                             <div class="profile_text">
                                 <h4>I'm <span class="ayush_text">Ayush Namdhar</span></h4>
